@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestMFC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\bosd\AppData\Local\Temp\RSP9EC0.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TestMFC.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Yangl\2023\01\AliYun dmp\TestMFC\ChildFrm.cpp"
+"F:\Yangl\2023\01\AliYun dmp\TestMFC\MainFrm.cpp"
+"F:\Yangl\2023\01\AliYun dmp\TestMFC\TestMFC.cpp"
+"F:\Yangl\2023\01\AliYun dmp\TestMFC\TestMFCDoc.cpp"
+"F:\Yangl\2023\01\AliYun dmp\TestMFC\TestMFCView.cpp"
+]
+Creating command line "cl.exe @C:\Users\bosd\AppData\Local\Temp\RSP9EC0.tmp" 
+Creating temporary file "C:\Users\bosd\AppData\Local\Temp\RSP9EC1.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TestMFC.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\Yangl\2023\01\AliYun dmp\TestMFC\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\bosd\AppData\Local\Temp\RSP9EC1.tmp" 
+Creating temporary file "C:\Users\bosd\AppData\Local\Temp\RSP9EC2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/TestMFC.pdb" /debug /machine:I386 /out:"Release/TestMFC.exe" /pdbtype:con 
+".\Release\ChildFrm.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\TestMFC.obj"
+".\Release\TestMFCDoc.obj"
+".\Release\TestMFCView.obj"
+".\Release\TestMFC.res"
+]
+Creating command line "link.exe @C:\Users\bosd\AppData\Local\Temp\RSP9EC2.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildFrm.cpp
+MainFrm.cpp
+TestMFC.cpp
+TestMFCDoc.cpp
+TestMFCView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TestMFC.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

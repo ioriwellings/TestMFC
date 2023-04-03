@@ -1,0 +1,67 @@
+// TestMFCView.h : interface of the CTestMFCView class
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_TESTMFCVIEW_H__43A1BE41_75B2_41DC_A1E6_1FFEBA8382B8__INCLUDED_)
+#define AFX_TESTMFCVIEW_H__43A1BE41_75B2_41DC_A1E6_1FFEBA8382B8__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+
+class CTestMFCView : public CView
+{
+protected: // create from serialization only
+	CTestMFCView();
+	DECLARE_DYNCREATE(CTestMFCView)
+
+// Attributes
+public:
+	CTestMFCDoc* GetDocument();
+
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CTestMFCView)
+	public:
+	virtual void OnDraw(CDC* pDC);  // overridden to draw this view
+	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+	protected:
+	virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
+	virtual void OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo);
+	virtual void OnEndPrinting(CDC* pDC, CPrintInfo* pInfo);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	virtual ~CTestMFCView();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+
+// Generated message map functions
+protected:
+	//{{AFX_MSG(CTestMFCView)
+		// NOTE - the ClassWizard will add and remove member functions here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+};
+
+#ifndef _DEBUG  // debug version in TestMFCView.cpp
+inline CTestMFCDoc* CTestMFCView::GetDocument()
+   { return (CTestMFCDoc*)m_pDocument; }
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_TESTMFCVIEW_H__43A1BE41_75B2_41DC_A1E6_1FFEBA8382B8__INCLUDED_)
